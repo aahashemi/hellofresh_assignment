@@ -4,7 +4,9 @@ from loguru import logger
 import isodate
 
 def parse_iso_duration(duration: str) -> int | None:
-
+    """
+    Parses an ISO 8601 duration string (e.g., 'PT1H30M') into total minutes.
+    """
     if not isinstance(duration, str):
         return None
 
@@ -30,7 +32,9 @@ def classify_difficulty(prepTime: str, cookTime: str) -> str:
         return "Unknown"
 
 def main():
-
+    """
+    Main execution function for the Recipes ETL process.
+    """
     dataset = RecipesDataset()
     df = dataset.get_dataset()
     
