@@ -10,14 +10,11 @@ This project extracts recipes containing "Chilies" from a dataset and classifies
    ```
 2. Install the required dependencies:
    ```sh
-   pip install -r requirements.txt
+   python -m pip install -r requirements.txt
    ```
    
 3. Execute the main script:
    ```sh
    python main.py
    ```
-
-The results is saved as chilies_recipes.csv
-
 
