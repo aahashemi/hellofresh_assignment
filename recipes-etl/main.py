@@ -17,7 +17,7 @@ def parse_iso_duration(duration: str) -> int | None:
     return int(td.total_seconds() // 60)
 
 def classify_difficulty(prepTime: str, cookTime: str) -> str:
-
+    """"Classifies recipe difficulty based on total preparation and cooking time."""
     prep_min = parse_iso_duration(prepTime) or 0
     cook_min = parse_iso_duration(cookTime) or 0
     total = prep_min + cook_min
